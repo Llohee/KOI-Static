@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import i18n from "@/i18n/18n";
 
 const LanguageSwitcher = () => {
-  const [, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   return (
     <div className="relative inline-block">
       <div className="relative group">
@@ -36,7 +36,11 @@ const LanguageSwitcher = () => {
                   ? "bg-blue-100 text-blue-700"
                   : "hover:bg-gray-100"
               } ${i18n.language === language.code ? "font-semibold" : ""}`}
-              onClick={() => setSearchParams({ lang: language.code })}
+              onClick={() => {
+                const params = Object.fromEntries(searchParams.entries());
+                params.lang = language.code;
+                setSearchParams(params);
+              }}
               type="button"
             >
               <span className="text-base w-5 text-center">{language.flag}</span>

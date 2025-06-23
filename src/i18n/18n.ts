@@ -5,10 +5,8 @@ import en from '../../public/locales/en.json';
 import vi from '../../public/locales/vi.json';
 import ja from '../../public/locales/ja.json';
 import zh from '../../public/locales/zh.json';
-import I18nextBrowserLanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(I18nextBrowserLanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -19,10 +17,6 @@ i18n
     },
     fallbackLng: LOCALES_DEFAULT,
     initImmediate: false,
-    detection: {
-      order: ['querystring'],
-      lookupQuerystring: 'lang',
-    },
     interpolation: {
       escapeValue: false,
     },
