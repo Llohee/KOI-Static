@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "KOI"
+  },
+  "common": {
+    "notFound": "見つかりません"
+  },
+  "Landing": {
+    "title": "ホーム"
+  }
+}

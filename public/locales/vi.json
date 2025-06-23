@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "KOI"
+  },
+  "common": {
+    "notFound": "Không tìm thấy"
+  },
+  "Landing": {
+    "title": "Trang chủ"
+  }
+}

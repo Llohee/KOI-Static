@@ -1,0 +1,11 @@
+{
+  "app": {
+    "name": "KOI"
+  },
+  "common": {
+    "notFound": "Not Found"
+  },
+  "Landing": {
+    "title": "Home"
+  }
+}
