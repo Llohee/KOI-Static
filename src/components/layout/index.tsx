@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Header from "./header";
 import LanguageRedirect from "@/pages/LanguageRedirect";
 import { useLanguageSync } from "@/i18n/routing";
-import { Toaster } from "../ui/sonner";
 
 export default function Layout() {
   useLanguageSync();
