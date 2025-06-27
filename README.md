@@ -1,4 +1,4 @@
-# How to Run Koi-Static Application
+# How to Run Koi-tracker Application
 
 This is a React project using TypeScript and Vite.
 
@@ -43,4 +43,4 @@ npm run lint
 ---
 
 If you encounter issues during installation or running, please check your Node.js version or try removing the `node_modules` folder and `package-lock.json` file, then run `npm install` again.
-# KOI-Static
+# KOI-tracker

@@ -1,0 +1,1 @@
+export const ENUM_DASHBOARD_STATUS = ['RUNNING', 'ONLINE', 'OFFLINE', 'READY'] as const
